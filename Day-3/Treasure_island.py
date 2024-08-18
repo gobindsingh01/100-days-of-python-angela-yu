@@ -1,4 +1,14 @@
 #Day 3
+skull='''
+     _.--""--._
+    /  _    _  \\
+ _  ( (_\  /_) )  _
+{ \._\   /\   /_./ }
+/_"=-.}______{.-="_\\
+ _  _.=("""")=._  _
+(_'"_.-"`~~`"-._"'_)
+ {_"            "_}
+ '''
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -31,13 +41,44 @@ if choice.lower()=="left":
         choice=input("\tOne red, One yellow and one blue. Which colour do you choose?\n>>>")
         if choice.lower()=="yellow":
             print("You went into the yellow door. You found the treasure. Game Over. You Win.")
+            print('''
+                            ,--.
+                           {    }
+                           K,   }
+                          /  ~Y`
+                     ,   /   /
+                    {_'-K.__/
+                      `/-.__L._
+                      /  ' /`\_}
+                     /  ' /
+             ____   /  ' /
+      ,-'~~~~    ~~/  ' /_
+    ,'             ``~~~  ',
+   (                        Y
+  {                         I
+ {      -                    `,
+ |       ',                   )
+ |        |   ,..__      __. Y
+ |    .,_./  Y ' / ^Y   J   )|
+ \           |' /   |   |   ||
+  \          L_/    . _ (_,.'(
+   \,   ,      ^^""' / |      )
+     \_  \          /,L]     /
+       '-_~-,       ` `   ./`
+          `'{_            )
+              ^^\..___,.--`''')
         elif choice.lower()=="red":
             print("You went into the red door. you got burned by fire. Game Over.")
+            print(skull)
         elif choice.lower()=="blue":
             print("You went into the blue door. You got eaten by beasts. Game Over.")
+            print(skull)
         else:
             print("Game Over.")
+            print(skull)
     else:
         print("You decided to swim and got attacked by the crocodiles in the water. Game Over.")
+        print(skull)
 else:
     print("You fell into a hole. Game Over.")
+    print(skull)
